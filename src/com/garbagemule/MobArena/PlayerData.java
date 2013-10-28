@@ -6,11 +6,13 @@ import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
+import org.bukkit.scoreboard.Scoreboard;
 
 public class PlayerData
 {
     private Player player;
     
+    private Scoreboard sb;
     private double health;
     private int food, level;
     private float exp;
@@ -23,6 +25,7 @@ public class PlayerData
         this.mode    = player.getGameMode();
         this.potions = player.getActivePotionEffects();
         this.entry   = loc;
+        this.sb      = player.getScoreboard();
         
         update();
     }
@@ -49,6 +52,7 @@ public class PlayerData
         player.setFoodLevel(food);
         player.setLevel(level);
         player.setExp(exp);
+        player.setScoreboard(sb);
     }
     
     public Player getPlayer() {
