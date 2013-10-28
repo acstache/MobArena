@@ -44,9 +44,9 @@ public class ScoreboardManager {
      * to the main server scoreboard.
      * @param player a player
      */
-    void removePlayer(Player player) {
+    /*void removePlayer(Player player) {
         player.setScoreboard(Bukkit.getScoreboardManager().getMainScoreboard());
-    }
+    }*/
 
     /**
      * Add a kill to the player's score. Called when a player kills a mob.

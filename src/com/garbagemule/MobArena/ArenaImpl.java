@@ -1025,7 +1025,7 @@ public class ArenaImpl implements Arena
         lobbyPlayers.remove(p);
         arenaPlayerMap.remove(p);
         
-        scoreboard.removePlayer(p);
+        //scoreboard.removePlayer(p);
     }
     
     private void setHealth(Player p, double health) {
